@@ -9,7 +9,9 @@
 from the feature the system only uses valence and energy.
 2. With this the Valence-Arousal Plane, a well known psychological models can be built, that can display all dimensins of mood. 
 The model is  it is widely adopted because it strikes a great balance between complexity and predictive power.
-    - ![alter](https://www.researchgate.net/profile/Patrick-Helmholz/publication/334084112/figure/fig2/AS:774702217830402@1561714810427/Emotional-classification-of-music-by-energy-and-valence-parameters-with-exemplary-songs.png)
+
+![Emotional-classification-of-music-by-energy-and-valence-parameters-with-exemplary-songs](https://user-images.githubusercontent.com/44570841/176823831-b674b3d9-75db-41a5-ac5e-0438997cc701.png)
+
 
 3. Vector Distance Model for recommendations:
     - ![alt text](https://miro.medium.com/max/700/1*wBVG7Iv7CIhJFpfPSM8Gxw.png)
