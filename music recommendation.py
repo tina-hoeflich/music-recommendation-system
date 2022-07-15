@@ -19,7 +19,7 @@ sp = authorization.authorize()
 genres = sp.recommendation_genre_seeds()
 
 # Set number of recommendations per genre
-n_recs = 100
+n_recs = 30
 
 # Initiate a dictionary with all the information you want to crawl
 data_dict = {"id":[], "genre":[], "track_name":[], "artist_name":[],
@@ -52,7 +52,7 @@ for g in tqdm(genres):
         data_dict["energy"].append(track_features.energy)
         
         # Wait 0.2 seconds per track so that the api doesnt overheat
-        time.sleep(0.2)
+        time.sleep(0.3)
         
 ##################
 ## PROCESS DATA ##
@@ -64,4 +64,3 @@ df = pd.DataFrame(data_dict)
 # Drop duplicates
 df.drop_duplicates(subset = "id", keep = "first", inplace = True)
 df.to_csv("valence_arousal_dataset.csv", index = False)
-
